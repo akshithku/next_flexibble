@@ -39,6 +39,7 @@ const Home= async() => {
         {/* {projectToDisplay.map(({node} : {node: ProjectInterface}) => (
           <ProjectCard key={""}/>
         ))} */}
+        <ProjectCard key={""}/>
       </section>
       <h1>LoadMore</h1>
     </section>
