@@ -18,8 +18,8 @@ const Home= async() => {
   
   const data = await fetchAllProjects() as ProjectSearch;
 
-  // const projectToDisplay = data?.projectSearch?.edges || [];
-  const projectToDisplay = [""];
+  const projectToDisplay = data?.projectSearch?.edges || [];
+  // const projectToDisplay = [""];
 
 
   if(projectToDisplay.length === 0){
@@ -36,10 +36,10 @@ const Home= async() => {
     <section className="flex-start flex-col paddings mb-16">
       <h1>Categories</h1>
       <section className="projects-grid">
-        {/* {projectToDisplay.map(({node} : {node: ProjectInterface}) => (
+        {projectToDisplay.map(({node} : {node: ProjectInterface}) => (
           <ProjectCard key={""}/>
-        ))} */}
-        <ProjectCard key={""}/>
+        ))}
+        {/* <ProjectCard key={""}/> */}
       </section>
       <h1>LoadMore</h1>
     </section>
